@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ibarra Real Nova', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6DC5EF;
+    height: 100px;
+    width: 100vw;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 80px;
+    margin-right: 10px;
+}
+.menu ul{
+    display: flex;
+}
+.menu li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu a{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+.sobre{
+    height: calc(100vh - 100px);
+    background-color: #B3D8E9;
+}
+.container-sobre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+}
+.sobre--left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+
+}
+.sobre-left-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobre--left img{
+    width: 100%;
+}
+.sobre--right{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sobre-right-area{
+    text-align: center;
+    margin-right: 40px;
+    height: 300px;
+}
+.sobre-right-area p{
+    text-align: justify;
+    margin-top: 30px;
+}
+.sobre-right-area h2{
+    font-size: 50px;
+}
+
+
+
+
+
+.helpstudent{
+    height: 100vh;
+    background-color: #83b2c8;  
+}
+.container-helpstudent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+}
+.container-helpstudent p{
+    text-align: justify;
+    margin-top: 30px;
+    width: 60%;
+}
+.container-helpstudent h2{
+    font-size: 50px;
+}
+.helpstudent-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.helpstudent-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.helpstudent-left img{
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+.planos{
+    background-color: #b3d8e9;
+    height: calc(100vh + 50px);
+
+}
+.cards-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    gap: 20px;
+}
+.card1,
+.card2,
+.card3{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.card1-area,
+.card2-area,
+.card3-area{
+    width: 60%;
+    height: 80%;
+    box-shadow: 3px 3px 8px 2px;
+    background-color: #83b2c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+.card1-area:hover,
+.card2-area:hover,
+.card3-area:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.planos h2{
+    font-size: 40px;
+    text-align: center;
+}
+.cards-area h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.card-area-beneficios{
+    margin-top: 50px;
+}
+.planos .button{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: #b3d8e9;
+    text-align: center;
+    border-radius: 8px;
+    width: 50%;
+    margin-top: 50%;
+}
+.planos .button:hover{
+    background-color: #000;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px){
+    .menu ul{
+        display: none;
+    }
+    .container-sobre{
+        display: grid;
+        margin-left: 30px;
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sobre{
+        height: calc(160vh - 100px);
+        background-color: #B3D8E9;
+        overflow-x: hidden;
+    }
+    .sobre--left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 300px;
+        margin-right: auto;
+    }
+    .sobre--right{
+       margin-left: 30px;
+    }
+
+    .helpstudent{
+        height: calc(160vh - 100px);
+        overflow-x: hidden;
+    }
+    .helpstudent-right{
+        margin-left: 30px;
+        margin-top: -70px;
+    }
+    .helpstudent-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        margin: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .container-helpstudent{
+        display: grid;
+        grid-template-columns: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .container-helpstudent h2{
+        font-size: 30px;
+    }
+    .helpstudent-left img{
+        width: 200px;  
+    }
+    .container-helpstudent p{
+        text-align: justify;
+        margin-top: 30px;
+        width: 80%;
+    }
+    .cards-area{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 160vh;
+        gap: 20px;
+    }
+    .planos{
+        background-color: #b3d8e9;
+        height: 250vh;
+    
+    }
+
+    .card1-area,
+.card2-area,
+.card3-area{
+    width: 60%;
+    height: 100%;
+    box-shadow: 3px 3px 8px 2px;
+    background-color: #83b2c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+}
